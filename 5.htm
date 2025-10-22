@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ЛР №5 — Адаптивный дизайн и UX-аудит</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="global-header">
+        <div class="wrap">
+            <h1>Лабораторные работы по Оптимизации веб-приложений</h1>
+      <nav class="global-nav">
+        <a href="index.htm">ЛР1</a>
+        <a href="2.htm">ЛР2</a>
+        <a href="3.htm">ЛР3</a>
+        <a href="4.htm">ЛР4</a>
+        <a href="5.htm">ЛР5</a>
+        <a href="6.htm">ЛР6</a>
+        <a href="7.htm">ЛР7</a>
+        <a href="8.html">ЛР8</a>
+        <a href="9.html">ЛР9</a>
+      </nav>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <header>
+            <h1>Лабораторная работа №5</h1>
+            <p class="subtitle">Тема: Адаптивный дизайн и UX-аудит</p>
+            <nav class="nav">
+                <a href="#theory">Теория</a>
+                <a href="#task">Задание</a>
+                <a href="#questions">Контрольные вопросы</a>
+            </nav>
+        </header>
+
+        <!-- ===================== -->
+        <!-- ТЕОРЕТИЧЕСКАЯ ЧАСТЬ   -->
+        <!-- ===================== -->
+        <section id="theory">
+            <h2>1. Теоретическая часть</h2>
+
+            <h3>1.1. Что такое адаптивный дизайн</h3>
+            <p><strong>Адаптивный дизайн</strong> — это подход к созданию веб-страниц, при котором содержимое,
+                макет и функции автоматически подстраиваются под размер экрана устройства (десктоп, планшет, мобильный
+                телефон).</p>
+
+            <h3>1.2. Медиа-запросы (Media Queries)</h3>
+            <p>Механизм CSS, позволяющий применять стили в зависимости от характеристик устройства (ширина экрана,
+                ориентация, разрешение).</p>
+            <pre><code>@media (max-width: 768px) {
+  .container { width: 100%; }
+  nav ul { flex-direction: column; }
+}</code></pre>
+
+            <h3>1.3. Что такое UX (User Experience)</h3>
+            <p><strong>UX</strong> — это общий опыт пользователя при взаимодействии с продуктом или сервисом. В контексте
+                веб-сайтов — это удобство навигации, скорость загрузки, понятность интерфейса, доступность.</p>
+
+            <h3>1.4. Основные принципы UX</h3>
+            <ul class="kv">
+                <li><strong>Простота и интуитивность</strong> — пользователь должен понимать, как что-то сделать.</li>
+                <li><strong>Доступность</strong> — сайт должен быть удобен для всех, включая людей с ограниченными
+                    возможностями.</li>
+                <li><strong>Скорость</strong> — быстрая загрузка страниц.</li>
+                <li><strong>Ясность</strong> — чёткие заголовки, кнопки, инструкции.</li>
+            </ul>
+        </section>
+
+        <!-- ===================== -->
+        <!-- ЗАДАНИЕ               -->
+        <!-- ===================== -->
+        <section id="task">
+            <h2>2. Задание</h2>
+
+            <h3>2.1. Подготовка</h3>
+            <p>Возьмите сайт из предыдущей лабораторной (например, <code>my-site</code> из ЛР4).</p>
+
+            <h3>2.2. Добавление адаптивности</h3>
+            <ol>
+                <li>Определите 3 брейкпоинта: <code>≥1024px</code> (десктоп), <code>768px–1023px</code> (планшет),
+                    <code><768px</code> (мобильный).</li>
+                <li>Используйте Flexbox или Grid для создания адаптивных сеток.</li>
+                <li>Примените медиа-запросы для изменения размеров шрифтов, отступов, навигации.</li>
+            </ol>
+
+            <h3>2.3. UX-аудит</h3>
+            <p>Протестируйте сайт на устройствах или в DevTools (Device Toolbar). Проверьте:</p>
+            <ul class="kv">
+                <li>удобство навигации (размеры кнопок/ссылок),</li>
+                <li>читаемость текста,</li>
+                <li>корректность отображения изображений,</li>
+                <li>элементы, снижающие конверсию (лишние шаги, скрытые ошибки форм).</li>
+            </ul>
+
+            <h3>2.4. «Скорость = деньги»</h3>
+            <p>Замерьте время загрузки главной страницы (DevTools → Network). Объясните, как задержка снижает продажи
+                (пример: уход после 3 секунд ожидания).</p>
+
+            <h3>2.5. «Битва конкурентов»</h3>
+            <p>Сравните демо-сайт ReadyScript с крупным магазином (Ozon/Wildberries) по 3 параметрам:</p>
+            <ul class="kv">
+                <li>скорость загрузки,</li>
+                <li>удобство поиска,</li>
+                <li>визуальная привлекательность.</li>
+            </ul>
+            <div class="gallery">
+                <figure class="step">
+                    <a href="images/competitor-comparison.png" class="zoom"
+                        data-caption="Сравнение UX между сайтами">
+                        <img src="images/competitor-comparison.png" alt="Сравнение UX между сайтами">
+                    </a>
+                    <figcaption>Рисунок 1 — Сравнение UX между сайтами</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- КОНТРОЛЬНЫЕ ВОПРОСЫ   -->
+        <!-- ===================== -->
+        <section id="questions">
+            <h2>3. Контрольные вопросы</h2>
+            <ol>
+                <li>Какие события браузера удобно использовать для детекции активности/бездействия?</li>
+                <li>Как организовать адаптивную вёрстку для трёх брейкпоинтов (≥1024, 768–1024, <768)?</li>
+                <li>Какие стили обычно меняют при ночной теме и как её переключать программно?</li>
+                <li>Как избежать «дребезга» (частых вызовов) при обработке событий мыши/тача?</li>
+                <li>Чем полезен онлайновый журнал событий и как безопасно добавлять строки в DOM?</li>
+            </ol>
+        </section>
+        <footer>
+            Подсказка: связывайте находки DevTools/UX-аудита с бизнес-метриками (конверсия, удержание, выручка, CAC, LTV) и приоритизируйте улучшения.
+        </footer>
+    </div>
+
+    <!-- Лайтбокс для увеличения изображений -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Закрыть (Esc)">&times;</button>
+        <img class="lightbox__img" alt="">
+        <div class="lightbox__cap"></div>
+    </div>
+    <script>
+        // Открытие
+        document.querySelectorAll('a.zoom').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const lb = document.getElementById('lightbox');
+                lb.querySelector('.lightbox__img').src = a.getAttribute('href');
+                lb.querySelector('.lightbox__img').alt = a.querySelector('img') ? .alt || '';
+                lb.querySelector('.lightbox__cap').textContent = a.dataset.caption || '';
+                lb.classList.add('is-open');
+                lb.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        // Закрытие
+        const closeLb = () => {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('is-open');
+            lb.setAttribute('aria-hidden', 'true');
+            lb.querySelector('.lightbox__img').src = '';
+            lb.querySelector('.lightbox__cap').textContent = '';
+        };
+
+        document.querySelector('#lightbox .lightbox__close')?.addEventListener('click', closeLb);
+        document.getElementById('lightbox')?.addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLb();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLb();
+        });
+    </script>
+</body>
+</html>

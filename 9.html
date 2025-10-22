@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЛР №9 — Итоговый проект: аудит и презентация</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="global-header">
+    <div class="wrap">
+            <h1>Лабораторные работы по Оптимизации веб-приложений</h1>
+      <nav class="global-nav" aria-label="Основная навигация">
+        <a href="index.htm">ЛР1</a>
+        <a href="2.htm">ЛР2</a>
+        <a href="3.htm">ЛР3</a>
+        <a href="4.htm">ЛР4</a>
+        <a href="5.htm">ЛР5</a>
+        <a href="6.htm">ЛР6</a>
+        <a href="7.htm">ЛР7</a>
+        <a href="8.html">ЛР8</a>
+        <a href="9.html">ЛР9</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <header>
+      <h1>Лабораторная работа №9</h1>
+      <p class="subtitle">Итоговый проект: аудит и презентация</p>
+      <nav class="nav" aria-label="Навигация по странице">
+        <a href="#theory">Теория</a>
+        <a href="#tasks">Задания</a>
+        <a href="#questions">Контрольные вопросы</a>
+      </nav>
+    </header>
+
+    <!-- ===================== -->
+    <!-- ТЕОРЕТИЧЕСКАЯ ЧАСТЬ   -->
+    <!-- ===================== -->
+    <section id="theory">
+      <h2>1. Теоретическая часть</h2>
+      <p><strong>Аудит веб-приложения</strong> — это комплексная проверка качества сайта по техническим, визуальным и маркетинговым критериям.</p>
+
+      <h3>Основные направления аудита:</h3>
+      <ul class="kv">
+        <li><strong>Техническая оптимизация</strong> — скорость загрузки, кэширование, адаптивность, структура кода.</li>
+        <li><strong>SEO-аудит</strong> — теги <code>title</code>, <code>description</code>, карта сайта, <code>robots.txt</code>, корректность ссылок.</li>
+        <li><strong>Контент-аудит</strong> — качество текстов, структура, уникальность, читаемость.</li>
+        <li><strong>Графический аудит</strong> — вес изображений, форматы, адаптация под Retina.</li>
+        <li><strong>Аналитический аудит</strong> — корректность UTM-меток, подключение аналитики, работа фильтров и отчётов.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== -->
+    <!-- ЗАДАНИЯ               -->
+    <!-- ===================== -->
+    <section id="tasks">
+      <h2>2. Практические задания</h2>
+
+      <h3>2.1. Выбор проекта для аудита</h3>
+      <ol>
+        <li>Выберите любой ранее выполненный проект (например, сайт из ЛР5–ЛР8).</li>
+        <li>Убедитесь, что он доступен онлайн (CodePen / GitHub Pages / Replit).</li>
+        <li>Скопируйте ссылку для анализа.</li>
+      </ol>
+
+      <h3>2.2. Технический аудит</h3>
+      <ol>
+        <li>Проверьте сайт в <a href="https://pagespeed.web.dev/?hl=ru" target="_blank" rel="noopener">PageSpeed Insights</a> или <a href="https://gtmetrix.com/" target="_blank" rel="noopener">GTmetrix</a>.</li>
+        <li>Зафиксируйте показатели: <em>Performance</em>, <em>Accessibility</em>, <em>Best Practices</em>, <em>SEO</em>.</li>
+        <li>Составьте таблицу:</li>
+      </ol>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Показатель</th>
+            <th>Значение</th>
+            <th>Рекомендация по улучшению</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Performance</td><td></td><td></td></tr>
+          <tr><td>Accessibility</td><td></td><td></td></tr>
+          <tr><td>SEO</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.3. Контент и визуальный аудит</h3>
+      <ol>
+        <li>Проверьте наличие:
+          <ul>
+            <li>заголовков <code>h1–h3</code>, списков, структурированных текстов;</li>
+            <li>корректных <code>alt</code>-описаний у изображений;</li>
+            <li>единых шрифтов и отступов;</li>
+            <li>адаптивности при ширине 360–1920 px.</li>
+          </ul>
+        </li>
+        <li>Сделайте скриншоты проблемных мест до и после исправления.</li>
+      </ol>
+
+      <h3>2.4. SEO-аудит</h3>
+      <ol>
+        <li>Проверьте:
+          <ul>
+            <li>корректность тегов <code>&lt;title&gt;</code>, <code>&lt;meta description&gt;</code>;</li>
+            <li>наличие и правильность <code>sitemap.xml</code> и <code>robots.txt</code>;</li>
+            <li>структуру URL.</li>
+          </ul>
+        </li>
+        <li>Оцените соответствие требованиям поисковой оптимизации.</li>
+      </ol>
+
+      <h3>2.5. Анализ рекламных меток</h3>
+      <ol>
+        <li>Проверьте корректность UTM-меток в ссылках.</li>
+        <li>Составьте таблицу:</li>
+      </ol>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ссылка</th>
+            <th>Источник</th>
+            <th>Кампания</th>
+            <th>Проверка</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>/promo?utm_source=vk&amp;utm_campaign=sale</code></td><td>vk</td><td>sale</td><td>✅ работает</td></tr>
+          <tr><td><code>/blog?utm_source=telegram&amp;utm_medium=social</code></td><td>telegram</td><td>social</td><td>⚠ отсутствует <code>utm_term</code></td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.6. Подготовка презентации</h3>
+      <p>Создайте презентацию из 5–7 слайдов (Google Slides / Canva / PowerPoint Online):</p>
+      <ul class="kv">
+        <li>Тема и цель проекта.</li>
+        <li>Скриншоты сайта.</li>
+        <li>Основные результаты аудита (до / после).</li>
+        <li>Методы оптимизации, применённые на сайте.</li>
+        <li>Выводы и рекомендации.</li>
+      </ul>
+
+      <h3>2.7. Вывод и оформление отчёта</h3>
+      <p>В отчёте отразите:</p>
+      <ul class="kv">
+        <li>цели аудита,</li>
+        <li>инструменты проверки,</li>
+        <li>таблицы с результатами,</li>
+        <li>скриншоты,</li>
+        <li>итоговый анализ и рекомендации по улучшению.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== -->
+    <!-- КОНТРОЛЬНЫЕ ВОПРОСЫ   -->
+    <!-- ===================== -->
+    <section id="questions">
+      <h2>3. Контрольные вопросы</h2>
+      <ol>
+        <li>Что включает в себя технический аудит веб-приложения?</li>
+        <li>Какие показатели оценивает PageSpeed Insights?</li>
+        <li>Зачем проверять структуру <code>robots.txt</code> и <code>sitemap.xml</code>?</li>
+        <li>Какие ошибки чаще всего встречаются при SEO-аудите?</li>
+        <li>Почему важно анализировать ALT-теги и адаптивность изображений?</li>
+        <li>Что означают показатели <em>Performance</em>, <em>Accessibility</em>, <em>SEO</em> в аудите?</li>
+        <li>Как интерпретировать результат 70–80 баллов в PageSpeed Insights?</li>
+        <li>Что такое CTR, и как он помогает в оценке рекламной кампании?</li>
+        <li>Зачем добавлять визуальную презентацию к аудиту?</li>
+        <li>Какие рекомендации можно дать после проведения итогового аудита?</li>
+      </ol>
+    </section>
+  </div>
+
+  <!-- Lightbox (на случай добавления скриншотов) -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Закрыть (Esc)">&times;</button>
+    <img class="lightbox__img" alt="">
+    <div class="lightbox__cap"></div>
+  </div>
+
+  <script>
+    // Lightbox (работает, если появятся изображения с классом zoom)
+    document.querySelectorAll('a.zoom').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const lb = document.getElementById('lightbox');
+        lb.querySelector('.lightbox__img').src = a.getAttribute('href');
+        lb.querySelector('.lightbox__img').alt = a.querySelector('img')?.alt || '';
+        lb.querySelector('.lightbox__cap').textContent = a.dataset.caption || '';
+        lb.classList.add('is-open');
+        lb.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    const closeLb = () => {
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('is-open');
+      lb.setAttribute('aria-hidden', 'true');
+      lb.querySelector('.lightbox__img').src = '';
+      lb.querySelector('.lightbox__cap').textContent = '';
+    };
+
+    document.querySelector('#lightbox .lightbox__close')?.addEventListener('click', closeLb);
+    document.getElementById('lightbox')?.addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox') closeLb();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLb();
+    });
+  </script>
+</body>
+
+</html> 

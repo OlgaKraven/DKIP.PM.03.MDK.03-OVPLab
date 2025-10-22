@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ЛР №4 — Поисковая оптимизация (SEO)</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+    <header class="global-header">
+        <div class="wrap">
+            <h1>Лабораторные работы по Опитмизации веб-приложений
+            </h1>
+            <nav class="global-nav">
+                <a href="index.htm">ЛР1</a>
+                <a href="2.htm">ЛР2</a>
+                <a href="3.htm">ЛР3</a>
+                <a href="4.htm">ЛР4</a>
+                <a href="5.htm">ЛР5</a>
+                <a href="6.htm">ЛР6</a>
+                <a href="7.htm">ЛР7</a>
+                <a href="8.html">ЛР8</a>
+                <a href="9.html">ЛР9</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <header>
+            <h1>Лабораторная работа №4</h1>
+            <p class="subtitle">Тема: Поисковая оптимизация (SEO)</p>
+            <nav class="nav">
+                <a href="#theory">Теория</a>
+                <a href="#task">Задание</a>
+                <a href="#questions">Контрольные вопросы</a>
+            </nav>
+        </header>
+
+        <!-- ===================== -->
+        <!-- ТЕОРЕТИЧЕСКАЯ ЧАСТЬ   -->
+        <!-- ===================== -->
+        <section id="theory">
+            <h2>1. Теоретическая часть</h2>
+
+            <h3>1.1. Что такое SEO</h3>
+            <p><strong>SEO (Search Engine Optimization)</strong> — это комплекс мер по оптимизации сайта, направленных
+                на повышение его видимости в результатах поисковых систем по релевантным запросам.</p>
+
+            <h3>1.2. Основные этапы SEO</h3>
+            <ul class="kv">
+                <li><strong>Краулинг</strong> — поисковый робот (бот) сканирует сайт, переходит по ссылкам.</li>
+                <li><strong>Индексация</strong> — робот анализирует и сохраняет информацию о страницах в поисковом
+                    индексе.</li>
+                <li><strong>Ранжирование</strong> — алгоритм определяет, какие страницы и в каком порядке показывать
+                    по конкретному запросу.</li>
+            </ul>
+
+            <h3>1.3. Основные факторы SEO</h3>
+            <ul class="kv">
+                <li><strong>Технический SEO</strong>: скорость, безопасность (HTTPS), структура URL, <code>robots.txt</code>,
+                    <code>sitemap.xml</code>.</li>
+                <li><strong>Контентный SEO</strong>: уникальность, релевантность, структура, ключевые слова.</li>
+                <li><strong>Внешний SEO</strong>: ссылки с других сайтов (бэклинки).</li>
+            </ul>
+
+            <h3>1.4. Основные теги SEO</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Тег/атрибут</th>
+                        <th>Пример</th>
+                        <th>Назначение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;title&gt;</code></td>
+                        <td><code>&lt;title&gt;Курсы IT — Главная&lt;/title&gt;</code></td>
+                        <td>Заголовок страницы в браузере и в сниппете поиска.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta name="description"&gt;</code></td>
+                        <td><code>&lt;meta name="description" content="Учебный сайт про курсы IT..."&gt;</code></td>
+                        <td>Описание страницы в сниппете поиска.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta name="robots"&gt;</code></td>
+                        <td><code>&lt;meta name="robots" content="index, follow"&gt;</code></td>
+                        <td>Инструкции для поисковых роботов (индексировать/не индексировать, переходить по ссылкам).</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code> – <code>&lt;h6&gt;</code></td>
+                        <td><code>&lt;h1&gt;Основной заголовок&lt;/h1&gt;</code></td>
+                        <td>Структура контента. <code>&lt;h1&gt;</code> — обычно один на страницу.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;img src="..." alt="..."&gt;</code></td>
+                        <td><code>&lt;img src="cat.jpg" alt="Милый котик"&gt;</code></td>
+                        <td>Описание изображения для поисковых систем и доступности.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ===================== -->
+        <!-- ЗАДАНИЕ               -->
+        <!-- ===================== -->
+        <section id="task">
+            <h2>2. Задание</h2>
+
+            <h3>2.1. Создание проекта</h3>
+            <ol>
+                <li>Создайте папку <code>my-site</code>.</li>
+                <li>Создайте три файла: <code>index.html</code>, <code>about.html</code>, <code>contacts.html</code>.</li>
+            </ol>
+
+            <h3>2.2. Заполнение <code>index.html</code></h3>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Отображение HTML кода как текста</title>
+  <style>
+    #test {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .code-container {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px 0;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+    }
+    .header {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body id="test">
+  <div class="header">
+    <h1>HTML код для отображения на экране</h1>
+    <p>Ниже представлен код HTML страницы в виде текста:</p>
+  </div>
+
+  <div class="code-container">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Курсы IT — Главная&lt;/title&gt;
+  &lt;meta name="description" content="Учебный сайт про курсы IT. SEO-анализ сайта на GitHub Pages."&gt;
+  &lt;meta name="keywords" content="курсы, IT, программирование, веб-разработка, SEO"&gt;
+  &lt;meta property="og:title" content="Курсы IT — Учебный сайт"&gt;
+  &lt;meta property="og:description" content="Учебный сайт про курсы IT. SEO-анализ сайта на GitHub Pages."&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Добро пожаловать на курс по IT!&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+      &lt;a href="about.html"&gt;О нас&lt;/a&gt;
+      &lt;a href="contacts.html"&gt;Контакты&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Почему IT?&lt;/h2&gt;
+      &lt;p&gt;IT — это перспективная и востребованная сфера.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2025 Курсы IT&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+  </div>
+</body>
+</html>
+            <h3>2.3. Оптимизация <code>about.html</code> и <code>contacts.html</code></h3>
+            <ul class="kv">
+                <li>Аналогично <code>index.html</code>, но с уникальными <code>&lt;title&gt;</code> и <code>&lt;meta name="description"&gt;</code>.</li>
+                <li>Используйте заголовки <code>&lt;h1&gt;</code> – <code>&lt;h3&gt;</code> для структурирования
+                    текста.</li>
+                <li>Добавьте теги <code>&lt;img&gt;</code> с атрибутом <code>alt</code>.</li>
+            </ul>
+
+            <h3>2.4. Создание <code>robots.txt</code> и <code>sitemap.xml</code></h3>
+            <ul class="kv">
+                <li>Создайте файл <code>robots.txt</code> в корне проекта.</li>
+                <li>Создайте файл <code>sitemap.xml</code> с URL всех трёх страниц.</li>
+                <li>Свяжите их.</li>
+            </ul>
+
+            <h3>2.5. Загрузка на GitHub Pages</h3>
+            <ol>
+                <li>Создайте репозиторий на GitHub.</li>
+                <li>Загрузите все файлы (<code>index.html</code>, <code>about.html</code>, <code>contacts.html</code>,
+                    <code>robots.txt</code>, <code>sitemap.xml</code>).</li>
+                <li>Включите GitHub Pages (Settings → Pages).</li>
+            </ol>
+
+            <h3>2.6. Проверка и анализ</h3>
+            <ol>
+                <li>Проверьте сайт в Google Search Console и Яндекс.Вебмастер.</li>
+                <li>Проанализируйте сниппеты.</li>
+                <li>Проверьте индексацию.</li>
+            </ol>
+        </section>
+
+        <!-- ===================== -->
+        <!-- КОНТРОЛЬНЫЕ ВОПРОСЫ   -->
+        <!-- ===================== -->
+        <section id="questions">
+            <h2>3. Контрольные вопросы</h2>
+            <ol>
+                <li>Что такое SEO и каковы его основные цели?</li>
+                <li>Опишите цикл: краулинг → индексация → ранжирование. Что может помешать индексации?</li>
+                <li>Какие поля и теги наиболее влияют на сниппет: <code>&lt;title&gt;</code>, <code>meta description</code>, H1?</li>
+                <li>Почему важны alt-тексты у изображений и единичный H1 на страницу?</li>
+                <li>Какие метрики скорости (FCP, LCP, CLS) и как они связаны с UX/SEO?</li>
+                <li>Как валидатор W3C и PageSpeed Insights помогают улучшать индексацию и видимость?</li>
+                <li>Как подтвердить права на сайт в Яндекс.Вебмастере и зачем это нужно?</li>
+            </ol>
+        </section>
+        <footer>
+            Подсказка: проверяйте <code>robots.txt</code>, валидируйте HTML, оптимизируйте скорость и следите за доступностью — это база хорошего SEO-старта.
+        </footer>
+    </div>
+
+    <!-- Лайтбокс (увеличение изображений) -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Закрыть (Esc)">&times;</button>
+        <img class="lightbox__img" alt="">
+        <div class="lightbox__cap"></div>
+    </div>
+    <script>
+        document.querySelectorAll('a.zoom').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const lb = document.getElementById('lightbox');
+                lb.querySelector('.lightbox__img').src = a.getAttribute('href');
+                lb.querySelector('.lightbox__img').alt = a.querySelector('img')?.alt || '';
+                lb.querySelector('.lightbox__cap').textContent = a.dataset.caption || '';
+                lb.classList.add('is-open');
+                lb.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        const closeLb = () => {
+            const lb = document.getElementById('lightbox');
+            lb.classList.remove('is-open');
+            lb.setAttribute('aria-hidden', 'true');
+            lb.querySelector('.lightbox__img').src = '';
+            lb.querySelector('.lightbox__cap').textContent = '';
+        };
+
+        document.querySelector('#lightbox .lightbox__close')?.addEventListener('click', closeLb);
+        document.getElementById('lightbox')?.addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLb();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLb();
+        });
+    </script>
+</body>
+</html>
